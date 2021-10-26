@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saloon Appointment Booking</title>
+    <link rel="stylesheet" href="style1.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700,900" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-time">
+            <h2 class="heading">Style</h2>
+            <h2>(The Family Saloon)</h2>
+            <h3 class="heading-days">Monday-Friday</h3>
+            <p>Open : 10am - 8pm </p>
+            <p>1pm - 2pm (lunch break)</p>
+
+            <h3 class="heading-days">Saturday and sunday</h3>
+            <p>Open : 9am - 9pm </p>
+            <p>1pm - 2pm (lunch break)</p>
+
+            <hr>
+
+            <h4 class="heading-phone">Call Us: (123) 45-45-456</h4>
+        </div>
+
+        <div class="container-form">
+            <form method="POST">
+                <h2 class="heading heading-yellow">Appointment</h2>
+                <table border="0px" cellpadding="5%" cellspacing="5px" align="center">
+                    <tr>
+
+                        <td>
+                            <p><label for="Name">Name:</label></p>
+                        </td>
+                        <td><input type="text" name="name" id="Name" placeholder="Your Name :"></td>
+
+                    </tr>
+                    <tr>
+
+                        <td>
+                            <p><label for="email">Email :</label> </p>
+                        </td>
+                        <td><input type="email" name="email" id="email" placeholder="Your email :"></td>
+                        
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p><label for="date">Date :</label> </p>
+                        </td>
+                        <td><input type="date" required="Required" class="form-control" id="date" name="txtDate"
+                                placeholder="Select suitable date" /></td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><label for="time">Time : </label></p>
+                        </td>
+                        <td><select name="time" id="time">
+                                <option value="0930">9:30</option>
+                                <option value="1030">10:30</option>
+                                <option value="1130">11:30</option>
+                                <option value="1230">12:30</option>
+                                <option value="0230">2:30</option>
+                                <option value="0330">3:30</option>
+                                <option value="0430">4:30</option>
+                                <option value="0530">5:30</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><label for="service">Service :</label> </p>
+                        </td>
+                        <td><select name="service" id="service">
+                                <option value="Hair Treatment">Hair Treatment</option>
+                                <option value="Forming Beard">Forming Beard</option>
+                                <option value="Hair Wash">Hair Wash</option>
+                                <option value="Hair Cut">Hair Cut</option>
+                                <option value="massage">Massage</option>
+                                <option value="Wedding">Wedding</option>
+                                <option value="Facial and Skin Care">Facial and Skin Care</option>
+                                <option value="MakeUp">MakeUp</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <td>
+                            <p><label for="beautician">Beautician :</label></p>
+                        </td>
+                        <td><select name="beautician" id="beautician">
+                                <option value="Romeo">Romeo</option>
+                                <option value="Ashif">Ashif</option>
+                                <option value="Raezy">Raezy</option>
+                            </select>
+                        </td>
+
+                    </tr>
+                </table>
+                <button class="btn" onclick="alert('Your Appointments is booked!!')">BOOK</button>
+            </form>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
